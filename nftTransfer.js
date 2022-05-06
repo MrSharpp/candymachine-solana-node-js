@@ -5,7 +5,7 @@ const fs = require('fs');
 const {Token, AccountLayout , TOKEN_PROGRAM_ID, ASSOCIATED_TOKEN_PROGRAM_ID} = require('@solana/spl-token');
 const bs58 = require("bs58");
 
-class NftSender{
+class NFTSender{
     async senNft(mintedAddress){
         try{
             const feePayer = Keypair.fromSecretKey(
